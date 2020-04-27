@@ -43,14 +43,15 @@
 			<version>1.18.12</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<!-- dependência para o servidor aceitar mediaType XML -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
 		</dependency>
-		
-		<!-- Não precisa reiniciar o servidor a cada alteração - utilizado para facilitar o desenvolvimento -->
+
+		<!-- Não precisa reiniciar o servidor a cada alteração - utilizado para 
+			facilitar o desenvolvimento -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -68,6 +69,14 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 		</dependency>
+
+		<!-- Para fazer a converção do model no represetation model - DTO -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.3.7</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

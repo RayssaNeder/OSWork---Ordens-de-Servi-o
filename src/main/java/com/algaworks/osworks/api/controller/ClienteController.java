@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.algaworks.osworks.domain.model.Cliente;
+import com.algaworks.osworks.domain.model.OrdemServico;
 import com.algaworks.osworks.domain.repository.ClienteRepository;
 import com.algaworks.osworks.domain.service.CadastroClienteService;
 
@@ -80,4 +81,5 @@ public class ClienteController {
 		cadastroClienteService.excluir(clienteId);
 		 return ResponseEntity.noContent().build();
 	}
+	
 }
